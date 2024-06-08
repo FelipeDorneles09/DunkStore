@@ -1,0 +1,431 @@
+/* Importing the Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* Resetting default browser styles and setting box-sizing to border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html{
+	scroll-behavior: smooth;
+	scroll-padding: 17rem;
+}
+
+/* Basic styles for the body */
+body {
+    background-color: rgb(255, 255, 240);
+    color: #404040;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the header */
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 25px 4%; /* Reduzindo o padding para manter a altura */
+    transition: all .3s ease;
+    background-color: rgba(64, 64, 64, 1);
+}
+
+nav.roll {
+    background-color: rgba(64, 64, 64, 1);
+    padding: 20px 2%;
+}
+
+nav ul{
+	display: flex;
+	align-items: center;
+}
+
+nav li{
+	list-style-type: none;
+	padding: 1rem;
+}
+
+.navbar-toggle{
+	color: #eef9ff;
+	font-size: 32px;
+	display: none;
+	transition: all 0.3s ease;
+}
+
+.navbar-toggle:hover{
+	color: rgb(255, 102, 0);
+	font-size: 36px;
+}
+
+#logo {
+    margin-left: 40px;
+    margin-right: auto; /* Margem à direita para manter a logo à esquerda */
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 102, 0); /* Cor da logo */
+    transition: all 0.3s ease;
+    vertical-align: middle; /* Alinhamento vertical com os itens do content-header */
+}
+
+#logo:hover {
+    color: #eef9ff; /* Cor ao passar o mouse */
+}
+
+#logo-s {
+    color: #eef9ff; /* Cor do texto complementar */
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+#logo:hover #logo-s {
+    color: rgb(255, 102, 0); /* Cor do texto complementar ao passar o mouse */
+}
+
+.content-header {
+    margin-right: 40px; /* Espaço entre o conteúdo e o logo */
+}
+
+
+.content-header a {
+    /* Mantém a formatação original */
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.2rem;
+    margin-left: 20px; /* Espaço entre os itens */
+    margin-right: 20px; /* Espaço entre os itens */
+}
+
+
+.act {
+    /* Mantém a formatação original */
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 6px 15px;
+}
+
+.ch::after {
+    /* Mantém a formatação original */
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 102, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.content-header a:hover {
+    /* Mantém a formatação original */
+    color: rgb(255, 102, 0);
+    border-color: rgb(255, 102, 0);
+}
+
+.ch:hover::after {
+    /* Mantém a formatação original */
+    width: 100%;
+    color: rgb(255, 102, 0);
+    border-color: rgb(255, 102, 0);
+}
+
+
+/* Container for the product details */
+.product-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 280px;
+    padding: 0 400px;
+}
+
+/* Styles for the product image */
+.product-image img {
+    max-width: 100%;
+    height: 50vh;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin-right: 600px;
+}
+
+/* Styles for the product info section */
+.product-info {
+    text-align: left;
+    max-width: 60%;
+}
+
+.product-info h1 {
+    font-size: 2.5rem;
+    color: rgb(255, 102, 0); /* Orange */
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: rgb(64, 64, 64);
+    font-weight: 500;
+}
+
+.line{
+    border: 1px solid rgb(64, 64, 64);
+    margin-bottom: 20px;
+}
+
+.product-info .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(64, 64, 64);
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: 3px solid rgb(255, 102, 0);
+    background: none;
+    border-radius: 99px;
+    padding: 10px 20px;
+    color: rgb(255, 102, 0);
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.8s ease;
+    font-weight: 600;
+}
+
+.btn .btn1 {
+    color: rgb(255, 102, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.8s ease;
+}
+
+.btn1:hover {
+    color: rgb(255, 255, 240);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgb(255, 102, 0);
+    z-index: -1;
+    transition: all 0.8s ease;
+}
+
+.btn::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.btn:hover::before {
+    height: 180%;
+}
+
+/* Styles for related products section */
+.titulo-produtos{
+    margin-top: 250px;
+    color: rgb(255, 102, 0);
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem;
+    max-width: 450px; /* Ajuste o tamanho conforme necessário */
+    background-color: rgb(64, 64, 64);
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 45px;
+    margin-bottom: 3rem;
+    text-align: left;
+	transition: all .3s ease;
+}
+
+.card:hover {
+	max-width: 600px;
+}
+
+
+.card img{
+    border: 1px solid black;
+    max-width: 40%; /* Ajuste a largura conforme necessário */
+    margin-right: 1.5rem;
+    border-radius: 30px;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card h3{
+    color: rgb(255, 102, 0);
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.card h5{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.card a{
+    background-color: #ff7300;
+    padding: 5px 20px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    align-self: flex-start; /* Alinha o botão à esquerda */
+}
+
+.card a:hover{
+    background-color: #fff;
+    color: #ff7300;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.search-container {
+    position: relative;
+    width: 60%; /* Ajuste conforme necessário */
+    max-width: 600px; /* Ajuste conforme necessário */
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Adicione padding para o ícone */
+    border: 2px solid rgb(255, 102, 0);
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Para evitar que o ícone bloqueie a interação com a barra de pesquisa */
+    color: #888;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav {
+		padding: 40px 4%; /* Reduzindo o padding para manter a altura */
+		
+	}
+	nav ul{
+		flex-wrap: wrap;
+	}
+
+	.navbar-toggle{
+		display: block;
+	}
+
+	
+	.content-header{
+		display: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.activo{
+		display: block;
+		
+	}
+
+    .product-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .product-info h1 {
+        font-size: 2rem;
+    }
+
+    .product-info p {
+        font-size: 1rem;
+    }
+
+    .product-info .price {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0 20px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 0.9rem;
+    }
+
+    .product-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .product-info p {
+        font-size: 0.9rem;
+    }
+
+    .product-info .price {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 250px;
+    }
+}
