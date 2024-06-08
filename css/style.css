@@ -462,7 +462,7 @@ nav li{
 
 /* 5 */
 /* Estilos para tablets (largura máxima de 800px) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
 	nav {
 		padding: 40px 4%; /* Reduzindo o padding para manter a altura */
 		
@@ -644,7 +644,36 @@ nav li{
 }
 
 /* Estilos para celulares (largura máxima de 520px) */
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 520px){
+	nav {
+		padding: 0px 0%; /* Reduzindo o padding para manter a altura */
+		
+	}
+	nav ul{
+		flex-wrap: wrap;
+	}
+
+	#logo{
+		font: 20px;
+		margin-left: 0px;
+	}
+
+	.navbar-toggle{
+		display: block;
+	}
+
+	
+	.content-header{
+		font-size: 13px;
+		display: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.activo{
+		display: block;
+	}
+		
     .slider {
         height: 50vh; /* Metade da altura original */
     }
@@ -665,13 +694,13 @@ nav li{
     }
 
     .txt h1 {
-        font-size: 35px;
-        line-height: 30px;
+        font-size: 24px;
+        line-height: 20px;
     }
 
     .txt p {
-        font-size: 16px;
-		line-height: 20px;
+        font-size: 14px;
+		line-height: 15px;
     }
 
     .prev, .next {
@@ -696,9 +725,9 @@ nav li{
 	}
 	
 	.container img{
-		margin-left: 20px;
-		width: 30vw;
-		height: 20vh;
+		margin-left: 10px;
+		width: 40vw;
+		height: 30vh;
 	}
 	
 	.about{
@@ -706,12 +735,12 @@ nav li{
 	}
 	
 	.about h2{
-		font-size: 35px;
+		font-size: 30px;
 		padding-bottom: 5px;
 	}
 	
 	.about h4{
-		font-size: 16px;
+		font-size: 12px;
 		padding-bottom: 10px;
 	}
 	
@@ -730,31 +759,32 @@ nav li{
 	}
 
 	.card{
-		padding: 1.5rem;
-		max-width: 400px; /* Ajuste o tamanho conforme necessário */
+		padding: 1rem;
+		max-width: 300px; /* Ajuste o tamanho conforme necessário */
 		border-radius: 45px;
 		margin-bottom: 3rem;
 	}
 	
 	.card img{
 		max-width: 45%; /* Ajuste a largura conforme necessário */
-		margin-right: 1rem;
+		margin-right: 0.5rem;
 	}
 	
 	.card h3{
 		margin-bottom: 5px;
-		font-size: 19px;
+		font-size: 16px;
 	}
 	
 	.card h5{
 		color: #fff;
 		margin-bottom: 10px;
-		font-size: 12px;
+		font-size: 10px;
 	}
 	
 	.card a{
+		font-size: 13px;
 		background-color: #ff7300;
-		padding: 5px 20px;
+		padding: 3px 10px;
 		border-radius: 30px;
 		color: #fff;
 		text-decoration: none;
@@ -774,14 +804,14 @@ nav li{
 		margin: 30px 0;
 	}
 	.search-container:hover{
-		width: 70%;
+		width: 80%;
 		max-width: 700px;
 	}
 	
 	
 	.search-container {
 		position: relative;
-		width: 60%; /* Aumente para 60% ou ajuste conforme necessário */
+		width: 70%; /* Aumente para 60% ou ajuste conforme necessário */
 		max-width: 600px; /* Ajuste conforme necessário */
 		transition: all .3s ease;
 	}
