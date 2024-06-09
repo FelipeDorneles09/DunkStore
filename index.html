@@ -16,7 +16,14 @@
 			<li class="content-header"><a href="#" class="ch">MENU</a></li>
 			<li class="content-header"><a href="#Sobre Nós" class="ch">SOBRE NÓS</a></li>
 			<li class="content-header"><a href="#Produtos" class="ch">PRODUTOS</a></li>
-			<li class="content-header"><a class="act" href="contact.html">CONTATO</a></li>
+			<li class="content-header"><a class="ch" href="contact.html">CONTATO</a></li>
+			<li class="content-header">
+				<a class="act" id="loggedUserFName" href="homepage.html">
+					<i class="fas fa-portrait"></i>
+					<span id="userName"></span> <!-- Elemento para inserir o nome do usuário -->
+				</a>
+			</li>
+			
 		</ul>
 	</nav>
 	
@@ -114,6 +121,7 @@
     </section>
     <script src="script.js"></script>
 	<script src="header.js"></script>
+	<script type="module" src="homepage.js"></script>
 	<script>
 		ScrollReveal({
 			reset: true,
