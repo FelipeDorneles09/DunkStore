@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 	<nav id="header">
@@ -113,6 +114,18 @@
     </section>
     <script src="script.js"></script>
 	<script src="header.js"></script>
+	<script>
+		ScrollReveal({
+			reset: true,
+			distance: '60px',
+			duration: 2000,
+			delay: 50
+		});
+		ScrollReveal().reveal('.about', {delay: 25,origin: 'left'})
+		ScrollReveal().reveal('.container img', {delay: 75,origin: 'right'})
+		ScrollReveal().reveal('.titulo-produtos', {delay: 25,origin: 'top'})
+		ScrollReveal().reveal('.produtos, .search-filter', {delay: 50,origin: 'bottom'})
+	</script>
 </body>
 </html>
 
