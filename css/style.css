@@ -112,12 +112,15 @@ nav li{
 }
 
 .act i {
-	font-size: 20px;
-    margin: 0 8px; /* Espaçamento entre o ícone e o texto */
+	padding: 5px 0;
+	font-size: 24px;
+    margin: 0 0 0 8px; /* Espaçamento entre o ícone e o texto */
 }
 
 #userName{
-	margin-right: 8px;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0 8px;
 }
 
 .ch::after {
@@ -697,6 +700,26 @@ nav li{
 
 	.activo{
 		display: block;
+	}
+
+	.act {
+		border: 2px solid #fff;
+		border-radius: 50px;
+		padding: 6px 15px;
+		display: inline-flex; /* Para alinhar o ícone e o texto horizontalmente */
+		align-items: center; /* Para alinhar verticalmente ao centro */
+	}
+	
+	.act i {
+		padding: 2px 0;
+		font-size: 16px;
+		margin: 0 0 0 4px; /* Espaçamento entre o ícone e o texto */
+	}
+	
+	#userName{
+		font-size: 13px;
+		font-weight: 700;
+		margin: 0 4px;
 	}
 		
     .slider {
