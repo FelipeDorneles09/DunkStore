@@ -1,7 +1,7 @@
- import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
  import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
  import{getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"
- 
+
 
   const firebaseConfig = {
     apiKey: "AIzaSyAW97PNgZ16f2RUAAku6nkbXukgbQlLFr8",
@@ -47,7 +47,7 @@
         const docRef=doc(db, "users", user.uid);
         setDoc(docRef,userData)
         .then(()=>{
-            window.location.href='login.html';
+            window.location.href='index.html';
         })
         .catch((error)=>{
             console.error("error writing document", error);
@@ -77,7 +77,7 @@
         showMessage('login is successful', 'signInMessage');
         const user=userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
-        window.location.href='index.html';
+        window.location.href='main.html';
     })
     .catch((error)=>{
         const errorCode=error.code;

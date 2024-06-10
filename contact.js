@@ -12,14 +12,14 @@ class FormSubmit {
     displaySuccess() {
         this.form.innerHTML = this.settings.success;
         setTimeout(() => {
-            window.location.href = "index.html";
+            window.location.href = "main.html";
         }, 3000); // Redireciona após 3 segundos
     }
 
     displayError() {
         this.form.innerHTML = this.settings.error;
         setTimeout(() => {
-            window.location.href = "index.html";
+            window.location.href = "main.html";
         }, 3000); // Redireciona após 3 segundos
     }
 

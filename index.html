@@ -1,140 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DunkShop</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-	<script src="https://unpkg.com/scrollreveal"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register & Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script type="module" src="firebaseauth.js"></script>
 </head>
 <body>
-	<nav id="header">
-		<ul>
-			<li id="logo">Dunk<span id="logo-s">Shop</span></li>
-			<li class="navbar-toggle"><i class="fas fa-bars"></i></li>
-			<li class="content-header"><a href="#" class="ch">MENU</a></li>
-			<li class="content-header"><a href="#Sobre Nós" class="ch">SOBRE NÓS</a></li>
-			<li class="content-header"><a href="#Produtos" class="ch">PRODUTOS</a></li>
-			<li class="content-header"><a class="ch" href="contact.html">CONTATO</a></li>
-			<li class="content-header">
-				<a class="act" id="loggedUserFName" href="homepage.html">
-					<i class="fas fa-portrait"></i>
-					<span id="userName"></span> <!-- Elemento para inserir o nome do usuário -->
-				</a>
-			</li>
-			
-		</ul>
-	</nav>
-	
-	
-    <div class="slider" id="Slider">
-		<!-- fade css -->
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>Conquiste a Quadra</h1>
-				<p>Com nossos tênis de basquete,<br>cada passo é um salto para a vitória.</p>
-			</div>
-			<img src="img1.jpg" style="width: 100%; height: 100%;">
-		</div>
-		
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>Domine o Jogo</h1>
-				<p>Equipamentos de basquete<br>projetados para elevar seu desempenho ao máximo.</p>
-			</div>
-			<img src="img2.jpg" style="width: 100%; height: 100%;">
-		</div>
-		
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>Salto Perfeito</h1>
-				<p>Descubra a combinação perfeita<br>de conforto e estilo com nossa linha de tênis de basquete.</p>
-			</div>
-			<img src="img3.jpg" style="width: 100%; height: 100%;">
-		</div>
-		
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>Paixão Pelo Basquete</h1>
-				<p>Desde iniciantes até profissionais,<br>temos o equipamento ideal para cada jogador.</p>
-			</div>
-			<img src="img4.jpg" style="width: 100%; height: 100%;">
-		</div>
-		
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>Inovação em Cada Passo</h1>
-				<p>Tênis de basquete que oferecem suporte<br>e agilidade para todos os movimentos.</p>
-			</div>
-			<img src="img5.jpg" style="width: 100%; height: 100%;">
-		</div>
-		<!-- /fade css -->
-		
-		<!-- onclick js -->
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-		
-		<div class="dotsbox" style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span>
-			<span class="dot" onclick="currentSlide(2)"></span>
-			<span class="dot" onclick="currentSlide(3)"></span>
-			<span class="dot" onclick="currentSlide(4)"></span>
-			<span class="dot" onclick="currentSlide(5)"></span>
-		</div>
-		<!-- /onclick js -->
-	</div>
-
-	<div class="container">
-		<div class="about" id="Sobre Nós">
-			<h2>Sobre Nós</h2>
-			<h4>Nossa missão é fornecer <strong>produtos</strong> de alta qualidade para entusiastas de basquete em todo o mundo, ajudando a melhorar seu desempenho e <strong>paixão</strong> pelo jogo. Acreditamos no poder transformador do esporte e trabalhamos diariamente para apoiar jogadores de todos os níveis a alcançar seu melhor <strong>potencial</strong>.</h4>
-			<button class="btn"><a href="">Saiba Mais</a></button>
-		</div>
-		<img src="imgS1.jpg" alt="">
-	</div>
-
-	<h1 class="titulo-produtos" id="Produtos">Produtos</h1>
-
-	<div class="search-filter">
-        <div class="search-container">
-            <input type="text" id="search-bar" placeholder="Buscar produtos por nome ou categoria...">
-            <svg
-                class="search-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
-                    fill="currentColor"
-                />
-            </svg>
+    <div class="container" id="signup" style="display:none;">
+      <h1 class="form-title">Register</h1>
+      <form method="post" action="">
+        <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+        <div class="input-group">
+           <i class="fas fa-user"></i>
+           <input type="text"  id="fName" placeholder="First Name" required>
+           <label for="fname">First Name</label>
         </div>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text"  id="lName" placeholder="Last Name" required>
+            <label for="lName">Last Name</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email"  id="rEmail" placeholder="Email" required>
+            <label for="rEmail">Email</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="rPassword"  placeholder="Password" required>
+            <label for="rPassword">Password</label>
+        </div>
+       <button class="btn" id="submitSignUp" >Sign Up</button>
+      </form>
+      <p class="or">
+        ----------or--------
+      </p>
+      <div class="icons">
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook"></i>
+      </div>
+      <div class="links">
+        <p>Already Have Account ?</p>
+        <button id="signInButton">Sign In</button>
+      </div>
     </div>
 
-    <section class="produtos" id="product">  
-    </section>
-    <script src="script.js"></script>
-	<script src="header.js"></script>
-	<script type="module" src="homepage.js"></script>
-	<script>
-		ScrollReveal({
-			reset: true,
-			distance: '60px',
-			duration: 2000,
-			delay: 50
-		});
-		ScrollReveal().reveal('.about', {delay: 25,origin: 'left'})
-		ScrollReveal().reveal('.container img', {delay: 75,origin: 'right'})
-		ScrollReveal().reveal('.titulo-produtos', {delay: 25,origin: 'top'})
-		ScrollReveal().reveal('.produtos, .search-filter', {delay: 50,origin: 'bottom'})
-	</script>
+  <div class="container" id="signIn">
+        <h1 class="form-title">Sign In</h1>
+        <form method="post" action="">
+          <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+          <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email"  id="email" placeholder="Email" required>
+              <label for="email">Email</label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-lock"></i>
+            <input type="password" id="password"  placeholder="Password" required>
+              <label for="password">Password</label>
+          </div>
+          <p class="recover">
+            <a href="#">Recover Password</a>
+          </p>
+         <button  class="btn"  id="submitSignIn">Sign In</button>
+        </form>
+        <p class="or">
+          ----------or--------
+        </p>
+        <div class="icons">
+          <i class="fab fa-google"></i>
+          <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+          <p>Don't have account yet?</p>
+          <button id="signUpButton">Sign Up</button>
+        </div>
+      </div>
+      <script src="login.js"></script>
 </body>
 </html>
-
-
