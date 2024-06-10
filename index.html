@@ -81,5 +81,15 @@
         </div>
       </div>
       <script src="login.js"></script>
+      <script>
+        document.querySelectorAll('.input-group input').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.previousElementSibling.classList.add('focused');
+            });
+            input.addEventListener('blur', () => {
+                input.previousElementSibling.classList.remove('focused');
+            });
+        });
+    </script>
 </body>
 </html>

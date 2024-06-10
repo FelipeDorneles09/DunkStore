@@ -77,7 +77,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
         showMessage('login is successful', 'signInMessage');
         const user=userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
-        window.location.href='main.html';
+        window.location.href='loader.html';
     })
     .catch((error)=>{
         const errorCode=error.code;

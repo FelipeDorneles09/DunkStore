@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+        *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat";	
+}
+
         body{
-            padding:30px;
-            background:linear-gradient(to right, #e2e2e2, #c9d6ff);
+            background-color: rgb(255, 255, 240);
+            font-family: "Montserrat";
+            font-weight: 600;
         }
         h1{
             text-align:center;
 
         }
         button{
-            color:blueviolet;
-            background-color:#c9d6ff;
+            background-color:rgb(255, 102, 0);
+            color: white;
             padding:5px;
             border-radius:5px;
             font-size:1rem;
@@ -23,32 +33,186 @@
             border:none;
         }
         button:hover{
-            text-decoration: underline;
-            color:blue;
+            background-color: white;
+            color: rgb(255, 102, 0);
         }
         button, div{
-            margin-left:15%;
             font-size:20px;
             padding:10px;
         }
         div{
             font-weight:400;
-            color:rgb(12,11,11);
-
+            color: rgba(64, 64, 64, 1);
+            font-weight: 600;
         }
         span{
             font-weight:600;
             font-size:22px;
-            color:black;
+            color: rgb(255, 102, 0);
         }
+
+        h1{
+            color: rgb(255, 102, 0);
+        }
+
+        nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 20px 4%; /* Reduzindo o padding para manter a altura */
+    transition: all .3s ease;
+    background-color: rgba(64, 64, 64, 1);
+}
+
+nav ul{
+	display: flex;
+	align-items: center;
+	
+}
+
+nav li{
+	list-style-type: none;
+	padding: 1rem;
+	font-size: 20px;
+}
+
+.navbar-toggle{
+	color: #eef9ff;
+	font-size: 32px;
+	display: none;
+	transition: all 0.3s ease;
+}
+
+.navbar-toggle:hover{
+	color: rgb(255, 102, 0);
+	font-size: 36px;
+}
+
+
+
+#logo {
+    margin-left: 40px;
+    margin-right: auto; /* Margem à direita para manter a logo à esquerda */
+    display: inline-block;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(255, 102, 0); /* Cor da logo */
+    transition: all 0.3s ease;
+    vertical-align: middle; /* Alinhamento vertical com os itens do content-header */
+}
+
+#logo:hover {
+    color: #eef9ff; /* Cor ao passar o mouse */
+}
+
+#logo-s {
+    color: #eef9ff; /* Cor do texto complementar */
+    margin-left: 5px;
+    transition: all 0.3s ease;
+    font-size: 32px;
+}
+
+#logo:hover #logo-s {
+    color: rgb(255, 102, 0); /* Cor do texto complementar ao passar o mouse */
+}
+
+.content-header {
+    margin-right: 40px; /* Espaço entre o conteúdo e o logo */
+}
+
+
+.content-header a {
+    /* Mantém a formatação original */
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.2rem;
+    margin-left: 20px; /* Espaço entre os itens */
+    margin-right: 20px; /* Espaço entre os itens */
+}
+
+
+.act {
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 6px 15px;
+    display: inline-flex; /* Para alinhar o ícone e o texto horizontalmente */
+    align-items: center; /* Para alinhar verticalmente ao centro */
+}
+
+.act i {
+	padding: 5px 0;
+	font-size: 24px;
+    margin: 0 0 0 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+#userName{
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0 8px;
+}
+
+.ch::after {
+    /* Mantém a formatação original */
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 102, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.content-header a:hover {
+    /* Mantém a formatação original */
+    color: rgb(255, 102, 0);
+    border-color: rgb(255, 102, 0);
+}
+
+.ch:hover::after {
+    /* Mantém a formatação original */
+    width: 100%;
+    color: rgb(255, 102, 0);
+    border-color: rgb(255, 102, 0);
+}
+
+.container{
+    padding: 300px;
+}
+
+.itens{
+    padding-top: 50px;
+}
+
     </style>
+    <script src="header.js"></script>
     <script type="module" src="./homepage.js"></script>
 </head>
 <body>
+    <nav id="header">
+		<ul>
+			<li id="logo">Dunk<span id="logo-s">Shop</span></li>
+			<li class="navbar-toggle"><i class="fas fa-bars"></i></li>
+			<li class="content-header"><a href="#" class="ch">MENU</a></li>
+			<li class="content-header"><a href="#Sobre Nós" class="ch">SOBRE NÓS</a></li>
+			<li class="content-header"><a href="#Produtos" class="ch">PRODUTOS</a></li>
+			<li class="content-header"><a class="ch" href="contact.html">CONTATO</a></li>
+			
+		</ul>
+	</nav>
+    <div class="container">
     <h1>Welcome to the Homepage</h1>
-    <div>First Name: <span id="userName"></span></div>
-    <div>Last Name: <span id="loggedUserLName"></span></div>
-    <div>Email: <span id="loggedUserEmail"></span></div>
-    <button id="logout">Logout</button>
+        <div class="itens">
+            <div>First Name: <span id="userName"></span></div>
+            <div>Last Name: <span id="loggedUserLName"></span></div>
+            <div>Email: <span id="loggedUserEmail"></span></div>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
 </body>
 </html>

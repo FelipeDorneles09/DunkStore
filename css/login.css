@@ -1,20 +1,25 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"poppins",sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
-body{
-    background-color: #c9d6ff;
-    background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 240);
+    font-family: "Montserrat";
+    font-weight: 500;
 }
-.container{
-    background:#fff;
-    width:450px;
-    padding:1.5rem;
-    margin:50px auto;
-    border-radius:10px;
-    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+
+.container {
+    background: #fff;
+    width: 600px;
+    padding: 5rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,1,0.9);
 }
 form{
     margin:0 2rem;
@@ -35,36 +40,40 @@ input{
     padding-left:1.5rem;
     font-size:15px;
 }
-.input-group{
-    padding:1% 0;
-    position:relative;
-
+.input-group {
+    padding: 1% 0;
+    position: relative;
 }
-.input-group i{
-    position:absolute;
-    color:black;
+.input-group i {
+    position: absolute;
+    color: black;
+    transition: color 0.3s ease;
 }
-input:focus{
+.input-group i.focused {
+    color: rgb(255, 102, 0);
+}
+input:focus {
     background-color: transparent;
-    outline:transparent;
-    border-bottom:2px solid hsl(327,90%,28%);
+    outline: transparent;
+    border-bottom: 2px solid rgb(255, 102, 0);
 }
-input::placeholder{
-    color:transparent;
+input::placeholder {
+    color: transparent;
 }
-label{
-    color:#757575;
-    position:relative;
-    left:1.2em;
-    top:-1.3em;
-    cursor:auto;
-    transition:0.3s ease all;
+label {
+    color: #757575;
+    position: relative;
+    left: 1.2em;
+    top: -1.3em;
+    cursor: auto;
+    transition: 0.3s ease all;
 }
-input:focus~label,input:not(:placeholder-shown)~label{
-    top:-3em;
-    color:hsl(327,90%,28%);
-    font-size:15px;
+input:focus ~ label, input:not(:placeholder-shown) ~ label {
+    top: -3em;
+    color: rgb(255, 102, 0);
+    font-size: 15px;
 }
+
 .recover{
     text-align:right;
     font-size:1rem;
@@ -73,7 +82,7 @@ input:focus~label,input:not(:placeholder-shown)~label{
 }
 .recover a{
     text-decoration:none;
-    color:rgb(125,125,235);
+    color: rgb(255, 102, 0);
 }
 .recover a:hover{
     color:blue;
@@ -84,15 +93,16 @@ button{
     padding:8px 0;
     border-radius:5px;
     outline:none;
-    border:none;
+    border: 2px solid rgb(255, 102, 0);
     width:100%;
-    background:rgb(125,125,235);
+    background: rgb(255, 102, 0);
     color:white;
     cursor:pointer;
-    transition:0.9s;
+    transition: all 0.3s ease;
 }
 button:hover{
-    background:#07001f;
+    color: rgb(255, 102, 0);;
+    background:white;
 }
 .or{
     font-size:1.1rem;
@@ -103,19 +113,19 @@ button:hover{
     text-align:center;
 }
 .icons i{
-    color:rgb(125,125,235);
+    color: rgb(255, 102, 0);
     padding:0.8rem 1.5rem;
     border-radius:10px;
     font-size:1.5rem;
     cursor:pointer;
-    border:2px solid #dfe9f5;
+    border:2px solid rgb(255, 102, 0);
     margin:0 15px;
     transition:1s;
 }
 .icons i:hover{
-    background:#07001f;
+    background: rgb(255, 102, 0);
     font-size:1.6rem;
-    border:2px solid rgb(125,125,235);
+    color: white;
 }
 .links{
     display:flex;
@@ -125,7 +135,7 @@ button:hover{
     font-weight:bold;
 }
  #signUpButton, #signInButton{
-    color:rgb(125,125,235);
+    color: rgb(255, 102, 0);
     border:none;
     background-color:transparent;
     font-size:1rem;
@@ -133,10 +143,9 @@ button:hover{
 }
 #signUpButton:hover, #signInButton:hover {
     text-decoration:underline;
-    color:blue;
 } 
 .messageDiv{
-    background-color:hsl(327,90%,28%);
+    background-color: rgb(255, 102, 0);
     color:white;
     padding:10px 20px;
     margin:10px;
