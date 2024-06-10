@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
@@ -189,8 +190,72 @@ nav li{
     padding-top: 50px;
 }
 
+@media screen and (max-width: 1024px) {
+	nav {
+		padding: 40px 4%; /* Reduzindo o padding para manter a altura */
+		
+	}
+	nav ul{
+		flex-wrap: wrap;
+	}
+
+	.navbar-toggle{
+		display: block;
+	}
+
+	
+	.content-header{
+		display: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.activo{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 520px){
+    nav {
+		padding: 0px 0%; /* Reduzindo o padding para manter a altura */
+		
+	}
+	nav ul{
+		flex-wrap: wrap;
+	}
+
+	#logo{
+		font: 20px;
+		margin-left: 0px;
+	}
+
+	.navbar-toggle{
+		display: block;
+	}
+
+	
+	.content-header{
+		font-size: 13px;
+		display: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.activo{
+		display: block;
+	}
+
+    .container{
+    padding: 200px 10px;
+}
+
+    .itens{
+    padding-top: 10px;
+}
+}
+
     </style>
-    <script src="header.js"></script>
+    
     <script type="module" src="./homepage.js"></script>
 </head>
 <body>
@@ -198,9 +263,9 @@ nav li{
 		<ul>
 			<li id="logo">Dunk<span id="logo-s">Shop</span></li>
 			<li class="navbar-toggle"><i class="fas fa-bars"></i></li>
-			<li class="content-header"><a href="#" class="ch">MENU</a></li>
-			<li class="content-header"><a href="#Sobre Nós" class="ch">SOBRE NÓS</a></li>
-			<li class="content-header"><a href="#Produtos" class="ch">PRODUTOS</a></li>
+			<li class="content-header"><a href="main.html" class="ch">MENU</a></li>
+			<li class="content-header"><a href="main.html#Sobre Nós" class="ch">SOBRE NÓS</a></li>
+			<li class="content-header"><a href="main.html#Produtos" class="ch">PRODUTOS</a></li>
 			<li class="content-header"><a class="ch" href="contact.html">CONTATO</a></li>
 			
 		</ul>
@@ -214,5 +279,6 @@ nav li{
             <button id="logout">Logout</button>
         </div>
     </div>
+    <script src="header.js"></script>
 </body>
 </html>

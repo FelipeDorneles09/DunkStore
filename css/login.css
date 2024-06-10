@@ -155,3 +155,13 @@ button:hover{
     animation:fadeOut 7s forwards;
 
 }
+
+@media screen and (max-width: 520px){
+    .container {
+        background: #fff;
+        width: 300px;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 20px 35px rgba(0,0,1,0.9);
+    }
+}
