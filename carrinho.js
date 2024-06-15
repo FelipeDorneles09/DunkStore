@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeCartButton = document.getElementById('close-cart');
     const totalPriceButton = document.getElementById('total-price');
     
+    let cartItems = [];
+
     // Função para carregar os itens do carrinho do armazenamento local
     function loadCartItemsFromLocalStorage() {
         const storedCartItems = localStorage.getItem('cartItems');
