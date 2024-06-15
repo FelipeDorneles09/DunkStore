@@ -50,7 +50,7 @@ function loadRelatedProducts(products, currentProduct) {
                 <a>R$${product.custo}</a>
             </div>
         `;
-        
+
         productCard.addEventListener('click', () => {
             window.location.href = `detalhes.html?id=${product.id}`;
         });
@@ -108,7 +108,7 @@ function renderProducts(products) {
                 <a>R$${product.custo}</a>
             </div>
         `;
-        
+
         productCard.addEventListener('click', () => {
             window.location.href = `detalhes.html?id=${product.id}`;
         });
@@ -121,3 +121,12 @@ getProductDetails();
 
 const searchBar = document.getElementById('search-bar');
 searchBar.addEventListener('input', filterProducts);
+
+document.getElementById('buy-button').addEventListener('click', function () {
+    const productName = document.getElementById('product-name').innerText;
+    const productPrice = parseFloat(document.getElementById('product-price').innerText.replace('R$', '').replace(',', '.'));
+    const product = { name: productName, price: productPrice };
+
+    // Chama a função global para adicionar o item ao carrinho
+    addItemToCart(product);
+});

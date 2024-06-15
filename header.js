@@ -25,6 +25,10 @@ toggleButton.addEventListener('click', function() {
     let anyActive = document.querySelector('.content-header.activo');
 
     for (let i = 0; i < navbarLinks.length; i++) {
+        // Ignorar elementos que contêm a classe 'fa-shopping-cart'
+        if (navbarLinks[i].querySelector('.fa-shopping-cart')) {
+            continue;
+        }
         navbarLinks[i].classList.toggle('activo');
     }
 

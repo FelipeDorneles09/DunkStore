@@ -16,10 +16,28 @@
 			<li class="content-header"><a href="main.html" class="ch">MENU</a></li>
 			<li class="content-header"><a href="main.html#Sobre Nós" class="ch">SOBRE NÓS</a></li>
 			<li class="content-header"><a href="#products-list" class="ch">PRODUTOS</a></li>
-			<li class="content-header"><a class="act" href="contact.html">CONTATO</a></li>
-		</ul>
+			<li class="content-header"><a class="ch" href="contact.html">CONTATO</a></li>
+            <li class="content-header no"><a class="ch" href="">CARRINHO</a></li>
+			<li class="content-header">
+				<div class="cart-icon">
+					<i class='fas fa-shopping-cart'></i>
+					<span class="quantity">0</span>
+				</div>
+			</li>
+        </ul>
 	</nav>
-    
+
+    <div class="cart-card" id="cart-card">
+        <div class="inner">
+        <h2>Carrinho</h2>
+        <div id="cart-items"></div>
+        </div>
+        <div class="cart-buttons">
+            <button id="close-cart">Fechar</button>
+            <button id="total-price">Total: R$ 0,00</button>
+        </div>
+    </div>
+
     <div class="product-details">
         <div class="product-image">
             <img id="product-image" src="" alt="Imagem do Produto">
@@ -30,7 +48,7 @@
             <div class="line"></div>
             <p id="product-description"></p>
             <div class="line"></div>
-            <button class="btn btn1" id="buy-button">Comprar</button>
+            <button class="btn btn1" id="buy-button">Adcionar ao Carrinho</button>
         </div>
     </div>
 
@@ -59,9 +77,11 @@
 
     <script src="detalhes.js"></script>
     <script src="header.js"></script>
+    <script src="carrinho.js"></script>
+    <script type="module" src="homepage.js"></script>
     <script>
 		ScrollReveal({
-			reset: true,
+			reset: false,
 			distance: '60px',
 			duration: 2000,
 			delay: 50
