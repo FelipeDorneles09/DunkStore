@@ -103,10 +103,24 @@ nav li{
 
 
 .act {
-    /* Mantém a formatação original */
     border: 2px solid #fff;
     border-radius: 50px;
     padding: 6px 15px;
+    display: inline-flex; /* Para alinhar o ícone e o texto horizontalmente */
+    align-items: center; /* Para alinhar verticalmente ao centro */
+}
+
+.act i {
+	padding: 5px 0;
+	font-size: 24px;
+    margin: 0 0 0 8px; /* Espaçamento entre o ícone e o texto */
+	
+}
+
+#userName{
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0 8px;
 }
 
 .ch::after {
@@ -290,11 +304,13 @@ textarea {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 800px) {
-	nav {
-		padding: 40px 4%; /* Reduzindo o padding para manter a altura */
-		
-	}
+@media screen and (max-width: 1024px) {
+    nav li{
+        list-style-type: none;
+        padding: 1rem;
+        font-size: 20px;
+    }
+
 	nav ul{
 		flex-wrap: wrap;
 	}

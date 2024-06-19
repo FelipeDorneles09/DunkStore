@@ -3,6 +3,9 @@
         "id": 1,
         "nome": "Giannis Imortallity 3",
         "imagem": "images/GiannisI3.png",
+        "var1": "images/giannis_var1.png",
+        "var2": "images/giannis_var2.png",
+        "var3": "images/giannis_var3.png",
         "descrição": "Não importa a façanha, não importa o objetivo alcançado, o Greek Freak sempre mantém seus países de origem perto de seu coração.",
         "custo": "559,99",
         "categoria": "Tênis"
@@ -11,6 +14,9 @@
         "id": 2,
         "nome": "Jordan Tatum 2",
         "imagem": "images/Tatum2.png",
+        "var1": "images/tatum_var1.png",
+        "var2": "images/tatum_var2.png",
+        "var3": "images/tatum_var3.png",
         "descrição": "O jogo não acaba até você ouvir o apito. Voe pelo jogo com energia de sobra no Tatum 2. Ajuda você a manter os pés leves, limitando o uso de borracha pesada.",
         "custo": "1139.99",
         "categoria": "Tênis"
@@ -19,6 +25,9 @@
         "id": 3,
         "nome": "Ja 1",
         "imagem": "images/Ja1.png",
+        "var1": "images/ja_var1.png",
+        "var2": "images/ja_var2.png",
+        "var3": "images/ja_var3.png",
         "descrição": "Ja Morant se tornou a superestrela que é hoje, afundando repetidamente jumpers em aros tortos, pulando em pneus de trator e driblando cones de trânsito nos verões úmidos da Carolina do Sul.",
         "custo": "740,99",
         "categoria": "Tênis"
@@ -27,6 +36,9 @@
         "id": 4,
         "nome": "Lebron Witness 8",
         "imagem": "images/LebronW8.png",
+        "var1": "images/LebronW_var1.png",
+        "var2": "images/LebronW_var2.png",
+        "var3": "images/LebronW_var3.png",
         "descrição": "Quando você pisa no chão, que tipo de performance deseja ter? Pare o show com este LeBron Witness 8 e mostre que não há limites para seu talento e habilidades em grande escala.",
         "custo": "559,99",
         "categoria": "Tênis"
@@ -35,6 +47,9 @@
         "id": 5,
         "nome": "Lebron XX",
         "imagem": "images/LebronXX.png",
+        "var1": "images/LebronXX_var1.png",
+        "var2": "images/LebronXX_var2.png",
+        "var3": "images/LebronXX_var3.png",
         "descrição": "Quando você pisa no chão, que tipo de performance deseja ter? Pare o show com este LeBron Witness 8 e mostre que não há limites para seu talento e habilidades em grande escala.",
         "custo": "1179,99",
         "categoria": "Tênis"
@@ -43,6 +58,9 @@
         "id": 6,
         "nome": "Jordan Zion 3",
         "imagem": "images/Zion3.png",
+        "var1": "images/giannis_var1.png",
+        "var2": "images/giannis_var2.png",
+        "var3": "images/giannis_var3.png",
         "descrição": "O terceiro calçado exclusivo de Zion celebra sua dedicação à elaboração de seu jogo único. Repleto de tecnologia pronta para quadra, ele foi projetado para jogadores que são mestres em terra e ar.",
         "custo": "1139,99",
         "categoria": "Tênis"
@@ -51,6 +69,9 @@
         "id": 7,
         "nome": "Under Armour Curry 3Z7",
         "imagem": "images/curry.png",
+        "var1": "images/curry_var1.png",
+        "var2": "images/curry_var2.png",
+        "var3": "images/curry_var3.png",
         "descrição": "O terceiro calçado exclusivo de Zion celebra sua dedicação à elaboração de seu jogo único. Repleto de tecnologia pronta para quadra, ele foi projetado para jogadores que são mestres em terra e ar.",
         "custo": "699,99",
         "categoria": "Tênis"
@@ -59,6 +80,9 @@
         "id": 8,
         "nome": "Bola de Basquete Wilson NBA",
         "imagem": "images/Wilson.png",
+        "var1": "images/Wilson_var1.png",
+        "var2": "images/Wilson_var2.png",
+        "var3": "images/Wilson_var3.png",
         "descrição": "Aprovada pelos melhores craques, da bola de Basquete Wilson NBA DRV possui estrutura emborrachada texturizada e reforçada que contribui para o melhor desempenho durante jogos/partidas, principalmente nas quadras.",
         "custo": "125,99",
         "categoria": "Bola"
@@ -67,6 +91,9 @@
         "id": 9,
         "nome": "Bola de Basquete Spalding TF-50",
         "imagem": "images/Spalding.png",
+        "var1": "images/Spalding_var1.png",
+        "var2": "images/Spalding_var2.png",
+        "var3": "images/Spalding_var3.png",
         "descrição": "Desenvolvida pela Spalding, essa Bola de Basquete texturizada oferece maior aderência para as mãos em todas as jogadas dentro ou fora das quadras.",
         "custo": "109,99",
         "categoria": "Bola"

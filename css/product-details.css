@@ -357,17 +357,61 @@ nav li{
     align-items: center;
     justify-content: center;
     margin-top: 280px;
-    padding: 0 400px;
+    padding: 0 200px;
+}
+
+.img-alt{ 
+    margin: 30px 15px;
+    width: 75%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img-alt img {
+    height: 140%;
+    width: 40%;
+    margin: 10px;
+    border-radius: 30px;
+    border: #404040 1px solid;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-alt img:hover {
+    height: 150%;
+}
+
+#product-var3, #product-var2, #product-var1{
+    transition: all .3s ease;
 }
 
 /* Styles for the product image */
-.product-image img {
-    max-width: 100%;
+
+.product-image{
+    width: 30vw;
     height: 50vh;
-    border: 1px solid #ddd;
+    margin-right: 150px;
+    overflow: hidden;
+    border: #404040 1px solid;
     border-radius: 30px;
-    margin-right: 600px;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
 }
+
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s ease; /* Adiciona uma transição suave */
+}
+
+.product-image img:hover {
+    transform: scale(1.5); /* Aumenta a escala da imagem em 10% */
+    cursor: zoom-in;
+}
+
 
 /* Styles for the product info section */
 .product-info {
@@ -476,7 +520,7 @@ nav li{
 }
 
 .card:hover {
-	max-width: 600px;
+	max-width: 500px;
 }
 
 
@@ -551,7 +595,7 @@ nav li{
 }
 
 /* Responsive styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     nav {
 		padding: 40px 4%; /* Reduzindo o padding para manter a altura */
 		
@@ -576,16 +620,6 @@ nav li{
 		
 	}
 
-    .product-details {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product-image {
-        max-width: 80%;
-        margin-bottom: 20px;
-    }
-
     .product-info {
         text-align: center;
         max-width: 100%;
@@ -607,12 +641,120 @@ nav li{
         padding: 8px 16px;
         font-size: 1rem;
     }
+
+    .product-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 270px;
+        padding: 0 50px;
+    }
+    
+    .img-alt{ 
+        margin: 15px 0;
+        width: 40vw;
+        height: 20%;
+       
+    }
+    
+    .img-alt img {
+        height: 100%;
+        width: 30%;
+        
+    }
+    
+    .img-alt img:hover{
+        width: 32%;
+    }
+    
+    #product-var3, #product-var2, #product-var1{
+        transition: all .3s ease;
+    }
+    
+    /* Styles for the product image */
+    
+    .product-image{
+        width: 40vw;
+        height: 40vh;
+        margin-right: 50px;
+    }
+    
+    .titulo-produtos{
+        margin-top: 150px;
+        font-size: 40px;
+    }
+    
+    .produtos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: .5rem;
+    }
+    
+    .card{
+		padding: 1rem;
+		max-width: 220px; /* Ajuste o tamanho conforme necessário */
+		margin-bottom: 1rem;
+		flex-direction: column;
+	}
+
+	.card:hover{
+		max-width: 250px; /* Ajuste o tamanho conforme necessário */
+	}
+	
+	.card img{
+		margin: 0;
+		max-width: 90%; /* Ajuste a largura conforme necessário */
+	}
+	
+	.card-content{
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.card h3{
+		margin: 10px 0;
+		font-size: 14px;
+	}
+	
+	.card h5{
+		display: none;
+	}
+	
+	.card a{
+		padding: 5px 20px;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		align-self: center;
+	}
+	
+    .search-filter {
+		
+		margin: 30px 0;
+	}
+	.search-container:hover{
+		width: 55%;
+		max-width: 700px;
+	}
+	
+	
+	.search-container {
+		
+		width: 45%; /* Aumente para 60% ou ajuste conforme necessário */
+		max-width: 600px; /* Ajuste conforme necessário */
+	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
     header {
         padding: 0 20px;
     }
+
+    nav {
+		padding: 0px 0%; /* Reduzindo o padding para manter a altura */
+		
+	}
 
     nav a {
         margin-left: 10px;
@@ -640,4 +782,133 @@ nav li{
         width: 100%;
         max-width: 250px;
     }
+
+    .product-info {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .product-info h1 {
+        font-size: 1.35rem;
+    }
+
+    .product-info p {
+        font-size: 0.75rem;
+    }
+
+    .product-info .price {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 4px 8px;
+        font-size: 0.9rem;
+    }
+
+    .product-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 170px;
+        padding: 0 20px;
+    }
+    
+    .img-alt{ 
+        margin: 5px 0;
+        width: 40vw;
+        height: 20%;
+       
+    }
+    
+    .img-alt img {
+        height: 100%;
+        width: 30%;
+        
+    }
+    
+    .img-alt img:hover{
+        width: 32%;
+    }
+    
+    #product-var3, #product-var2, #product-var1{
+        transition: all .3s ease;
+    }
+    
+    /* Styles for the product image */
+    
+    .product-image{
+        width: 40vw;
+        height: 20vh;
+        margin-right: 30px;
+    }
+    
+    .titulo-produtos{
+		margin-top: 120px;
+		font-size: 32px;
+	}
+	
+	.produtos{
+		margin: 1rem;
+	}
+
+	.card{
+		padding: 1rem;
+		max-width: 180px; /* Ajuste o tamanho conforme necessário */
+		border-radius: 45px;
+		margin-bottom: 3rem;
+	}
+	
+	.card:hover{
+		max-width: 200px;
+	}
+
+	.card img{
+		max-width: 90%; /* Ajuste a largura conforme necessário */
+	}
+	
+	.card h3{
+		margin: 10px 0;
+		font-size: 14px;
+	}
+	
+	.card h5{
+		color: #fff;
+		margin-bottom: 10px;
+		font-size: 10px;
+	}
+	
+	.card a{
+		font-size: 13px;
+		background-color: #ff7300;
+		padding: 3px 10px;
+		border-radius: 30px;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		align-self: center; /* Alinha o botão à esquerda */
+	}
+	
+	.card a:hover{
+		background-color: #fff;
+		color: #ff7300;
+	}
+	
+	.search-filter {
+		display: flex;
+		justify-content: center;
+		margin: 30px 0;
+	}
+	.search-container:hover{
+		width: 80%;
+		max-width: 700px;
+	}
+	
+	
+	.search-container {
+		position: relative;
+		width: 70%; /* Aumente para 60% ou ajuste conforme necessário */
+		max-width: 600px; /* Ajuste conforme necessário */
+		transition: all .3s ease;
+	}
 }

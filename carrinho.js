@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const cartCard = document.getElementById('cart-card');
     const closeCartButton = document.getElementById('close-cart');
     const totalPriceButton = document.getElementById('total-price');
-    
+    const cartName = document.querySelector('.card-name');
+
     let cartItems = [];
 
     // Função para carregar os itens do carrinho do armazenamento local
@@ -33,12 +34,36 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    if (cartName) {
+        // Mostrar o card do carrinho ao clicar no ícone do carrinho
+        cartName.addEventListener('click', () => {
+            if (cartCard) {
+                cartCard.style.display = 'block';
+                for (let i = 0; i < navbarLinks.length; i++) {
+                    navbarLinks[i].classList.remove('activo');
+    }
+            }
+        });
+    }
+
     // Verifica se o botão de fechar o carrinho foi encontrado
     if (closeCartButton) {
         // Fechar o card do carrinho
         closeCartButton.addEventListener('click', () => {
             if (cartCard) {
                 cartCard.style.display = 'none';
+            }
+            if (window.scrollY === 0) {
+                if (menuExpandedAtTop || anyActive) {
+                    header.classList.remove('roll');
+                    menuExpandedAtTop = false;
+                } else {
+                    header.classList.add('roll');
+                    menuExpandedAtTop = true;
+                }
+            } else {
+                menuExpandedAtTop = false;
             }
         });
     }

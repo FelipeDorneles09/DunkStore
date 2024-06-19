@@ -20,6 +20,9 @@ function getProductDetails() {
 
             if (product) {
                 document.getElementById('product-image').src = product.imagem;
+                document.getElementById('product-var1').src = product.var1;
+                document.getElementById('product-var2').src = product.var2;
+                document.getElementById('product-var3').src = product.var3;
                 document.getElementById('product-name').textContent = product.nome;
                 document.getElementById('product-price').textContent = "R$" + product.custo;
                 document.getElementById('product-description').textContent = product.descrição;
@@ -130,3 +133,33 @@ document.getElementById('buy-button').addEventListener('click', function () {
     // Chama a função global para adicionar o item ao carrinho
     addItemToCart(product);
 });
+
+// Adicione isso ao final do seu arquivo detalhes.js
+
+// Adicione isso ao final do seu arquivo detalhes.js
+
+// Função para trocar a foto principal e a imagem variante clicada
+function swapImages(clickedImg) {
+    // Obter o src da imagem principal
+    const mainImgSrc = document.getElementById('product-image').src;
+    
+    // Trocar a imagem principal com a imagem variante clicada
+    document.getElementById('product-image').src = clickedImg.src;
+    
+    // Trocar a imagem variante clicada com a imagem principal original
+    clickedImg.src = mainImgSrc;
+}
+
+// Adicionar evento de clique para cada imagem variante
+document.getElementById('product-var1').addEventListener('click', function() {
+    swapImages(this);
+});
+
+document.getElementById('product-var2').addEventListener('click', function() {
+    swapImages(this);
+});
+
+document.getElementById('product-var3').addEventListener('click', function() {
+    swapImages(this);
+});
+

@@ -15,9 +15,9 @@
 			<li class="navbar-toggle"><i class="fas fa-bars"></i></li>
 			<li class="content-header"><a href="main.html" class="ch">MENU</a></li>
 			<li class="content-header"><a href="main.html#Sobre Nós" class="ch">SOBRE NÓS</a></li>
-			<li class="content-header"><a href="#products-list" class="ch">PRODUTOS</a></li>
+			<li class="content-header"><a href="main.html#Produtos" class="ch">PRODUTOS</a></li>
 			<li class="content-header"><a class="ch" href="contact.html">CONTATO</a></li>
-            <li class="content-header no"><a class="ch" href="">CARRINHO</a></li>
+            <li class="content-header no"><div class="card-name"><a class="ch">CARRINHO</a></div></li>
 			<li class="content-header">
 				<div class="cart-icon">
 					<i class='fas fa-shopping-cart'></i>
@@ -39,8 +39,15 @@
     </div>
 
     <div class="product-details">
-        <div class="product-image">
-            <img id="product-image" src="" alt="Imagem do Produto">
+        <div class="img-product">
+            <div class="product-image" id="product-image-container">
+                <img id="product-image" src="" alt="Imagem do Produto">
+            </div>                     
+        <div class="img-alt">
+            <img id="product-var1" src="" alt="Imagem do Produto">
+            <img id="product-var2" src="" alt="Imagem do Produto">
+            <img id="product-var3" src="" alt="Imagem do Produto">
+        </div>
         </div>
         <div class="product-info">
             <h1 id="product-name"></h1>
@@ -86,7 +93,7 @@
 			duration: 2000,
 			delay: 50
 		});
-		ScrollReveal().reveal('.product-image img', {delay: 25,origin: 'left'})
+		ScrollReveal().reveal('.img-product', {delay: 25,origin: 'left'})
 		ScrollReveal().reveal('.product-info', {delay: 75,origin: 'right'})
 		ScrollReveal().reveal('.titulo-produtos', {delay: 25,origin: 'top'})
 		ScrollReveal().reveal('.produtos, .search-filter', {delay: 50,origin: 'bottom'})
