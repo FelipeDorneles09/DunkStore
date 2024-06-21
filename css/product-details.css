@@ -510,7 +510,7 @@ nav li{
     flex-direction: row;
     align-items: center;
     padding: 1.5rem;
-    max-width: 450px; /* Ajuste o tamanho conforme necessário */
+    max-width: 460px; /* Ajuste o tamanho conforme necessário */
     background-color: rgb(64, 64, 64);
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
     border-radius: 45px;
@@ -520,7 +520,7 @@ nav li{
 }
 
 .card:hover {
-	max-width: 500px;
+	max-width: 510px;
 }
 
 
@@ -596,10 +596,7 @@ nav li{
 
 /* Responsive styles */
 @media screen and (max-width: 1024px) {
-    nav {
-		padding: 40px 4%; /* Reduzindo o padding para manter a altura */
-		
-	}
+    
 	nav ul{
 		flex-wrap: wrap;
 	}
@@ -692,14 +689,15 @@ nav li{
     }
     
     .card{
-		padding: 1rem;
-		max-width: 220px; /* Ajuste o tamanho conforme necessário */
+		padding: 0.6rem;
+		max-width: 150px; /* Ajuste o tamanho conforme necessário */
 		margin-bottom: 1rem;
 		flex-direction: column;
+		border-radius: 30px;
 	}
 
 	.card:hover{
-		max-width: 250px; /* Ajuste o tamanho conforme necessário */
+		max-width: 170px; /* Ajuste o tamanho conforme necessário */
 	}
 	
 	.card img{
@@ -852,14 +850,14 @@ nav li{
 	}
 
 	.card{
-		padding: 1rem;
-		max-width: 180px; /* Ajuste o tamanho conforme necessário */
-		border-radius: 45px;
-		margin-bottom: 3rem;
+		padding: 0.4rem;
+		max-width: 115px; /* Ajuste o tamanho conforme necessário */
+		border-radius: 30px;
+		margin-bottom: 1rem;
 	}
 	
 	.card:hover{
-		max-width: 200px;
+		max-width: 130px;
 	}
 
 	.card img{

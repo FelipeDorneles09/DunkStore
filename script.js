@@ -107,4 +107,27 @@ function filterProducts(produtos) {
     renderProducts(filteredProducts);
 }
 
+const mainImage = document.getElementById('main-image');
+    const variantImages = document.querySelectorAll('.destaque-variant img');
+
+    variantImages.forEach(img => {
+        img.addEventListener('click', () => {
+            mainImage.src = img.src;
+        });
+    });
+
 carregar();
+
+let destaque = document.querySelector('.destaque')
+let layer = document.querySelectorAll('.layer')
+
+destaque.onmousemove = function(e){
+    let X = e.pageX
+    let Y = e.pageY
+
+    layer[0].style.transform = 'translate('+ X/100 +'px, '+ Y/100 +' px)'
+    layer[1].style.transform = 'translate('+ X/100 +'px, '+ Y/100 +' px)'
+    layer[2].style.transform = 'translate('+ X/100 +'px, '+ Y/100 +' px)'
+    layer[3].style.transform = 'translate('+ X/100 +'px, '+ Y/100 +' px)'
+    layer[4].style.transform = 'translate('+ X/100 +'px, '+ Y/100 +' px)'
+}

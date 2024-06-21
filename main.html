@@ -115,6 +115,40 @@
 		<img src="imgS1.jpg" alt="">
 	</div>
 
+	<div class="destaque">
+		<div class="destaque-produto">
+			<h2>Wade All City 12</h2>
+			<div class="star">
+				<span class="fa fa-star max"></span>
+				<span class="fa fa-star max"></span>
+				<span class="fa fa-star max"></span>
+				<span class="fa fa-star max"></span>
+				<span class="fa fa-star max"></span>
+			</div>
+			<h4><b>O All City 12</b> conta com um cabedal leve e respirável que mantém seus pés frescos e confortáveis, mesmo durante partidas intensas. A entressola BOOM de comprimento total oferece amortecimento responsivo e retorno de energia, impulsionando você pela quadra com velocidade explosiva.</h4>
+			<button class="btn"><a href="detalhes.html?id=4">Comprar</a></button>
+		</div>
+		<div>
+			<div class="imagem-destaque">
+				<img id="main-image" src="wow_1.png" alt="">
+			</div>
+			<div class="destaque-variant">
+				<div class="row">
+					<img src="wow_1.png" alt="">
+				</div>
+				<div class="row row2">
+					<img src="wow_2.png" alt="">
+				</div>
+				<div class="row row3">
+					<img src="wow_3.png" alt="">
+				</div>
+				<div class="row row4">
+					<img src="wow_4.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<h1 class="titulo-produtos" id="Produtos">Produtos</h1>
 
 	<div class="search-filter">
@@ -151,6 +185,9 @@
 			duration: 2000,
 			delay: 50
 		});
+		ScrollReveal().reveal('.destaque-produto', {delay: 25,origin: 'right'})
+		ScrollReveal().reveal('.imagem-destaque img', {delay: 25,origin: 'left'})
+		ScrollReveal().reveal('.destaque-variant', {delay: 25,origin: 'bottom'})
 		ScrollReveal().reveal('.about', {delay: 25,origin: 'left'})
 		ScrollReveal().reveal('.container img', {delay: 75,origin: 'right'})
 		ScrollReveal().reveal('.titulo-produtos', {delay: 25,origin: 'top'})

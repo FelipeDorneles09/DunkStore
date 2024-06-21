@@ -511,6 +511,92 @@ nav li{
 	height: 180%;
 }
 
+.destaque {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 200px 200px;
+}
+
+.destaque-produto {
+    padding: 75px;
+}
+
+.destaque-produto h2 {
+    font-size: 64px;
+    font-weight: 700;
+    color: rgb(255, 102, 0);
+}
+
+.destaque-produto b {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.star {
+    margin: 5px 0 10px 10px;
+}
+
+.fa-star {
+    color: rgb(255, 187, 0);
+}
+
+.destaque-produto h4 {
+    font-size: 22px;
+    color: rgb(64, 64, 64);
+    font-weight: 600;
+}
+
+.imagem-destaque img {
+    max-width: 700px;
+    max-height: 700px;
+	margin-bottom: 100px;
+}
+
+.destaque-variant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: -270px; /* Ajuste conforme necessário */
+    gap: 2.5rem;
+}
+
+.row img {
+    width: 100px;
+    max-width: 100%;
+}
+
+.row {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(94, 120, 192);
+    transition: all .55s ease;
+    cursor: pointer;
+}
+
+.row:hover {
+    transform: scale(1.25);
+}
+
+.row2 {
+    background-color: rgb(139, 0, 0);
+}
+
+.row3 {
+    background-color: rgb(255, 174, 0);
+}
+
+.row4 {
+    background-color: rgb(216, 129, 143);
+}
+
 .titulo-produtos{
     margin-top: 250px;
     color: rgb(255, 102, 0);
@@ -523,7 +609,7 @@ nav li{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 5rem;
+    margin: 3rem;
 }
 
 .card{
@@ -532,7 +618,7 @@ nav li{
     flex-direction: row;
     align-items: center;
     padding: 1.5rem;
-    max-width: 450px; /* Ajuste o tamanho conforme necessário */
+    max-width: 460px; /* Ajuste o tamanho conforme necessário */
     background-color: rgb(64, 64, 64);
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
     border-radius: 45px;
@@ -542,7 +628,7 @@ nav li{
 }
 
 .card:hover {
-	max-width: 500px;
+	max-width: 510px;
 }
 
 .card img{
@@ -749,19 +835,20 @@ nav li{
 	}
 
 	.card{
-		padding: 1rem;
-		max-width: 200px; /* Ajuste o tamanho conforme necessário */
+		padding: 0.6rem;
+		max-width: 150px; /* Ajuste o tamanho conforme necessário */
 		margin-bottom: 1rem;
 		flex-direction: column;
+		border-radius: 30px;
 	}
 
 	.card:hover{
-		max-width: 230px; /* Ajuste o tamanho conforme necessário */
+		max-width: 170px; /* Ajuste o tamanho conforme necessário */
 	}
 	
 	.card img{
 		margin: 0;
-		max-width: 90%; /* Ajuste a largura conforme necessário */
+		max-width: 95%; /* Ajuste a largura conforme necessário */
 	}
 	
 	.card-content{
@@ -951,22 +1038,22 @@ nav li{
 	}
 	
 	.produtos{
-		margin: 1rem;
+		margin: 0.3rem;
 	}
 
 	.card{
-		padding: 1rem;
-		max-width: 180px; /* Ajuste o tamanho conforme necessário */
-		border-radius: 45px;
-		margin-bottom: 3rem;
+		padding: 0.4rem;
+		max-width: 115px; /* Ajuste o tamanho conforme necessário */
+		border-radius: 30px;
+		margin-bottom: 1rem;
 	}
 	
 	.card:hover{
-		max-width: 200px;
+		max-width: 130px;
 	}
 
 	.card img{
-		max-width: 90%; /* Ajuste a largura conforme necessário */
+		max-width: 95%; /* Ajuste a largura conforme necessário */
 	}
 	
 	.card h3{
@@ -990,6 +1077,7 @@ nav li{
 		font-weight: 600;
 		transition: all 0.3s ease;
 		align-self: center; /* Alinha o botão à esquerda */
+		margin-bottom: 5px;
 	}
 	
 	.card a:hover{
