@@ -49,6 +49,13 @@ function loadRelatedProducts(products, currentProduct) {
             <img src="${product.imagem}" alt="${product.nome}">
             <div class="card-content">
                 <h3>${product.nome}</h3>
+                <div class="star">
+				    <span class="fa fa-star max"></span>
+				    <span class="fa fa-star max"></span>
+                    <span class="fa fa-star max"></span>
+                    <span class="fa fa-star max"></span>
+				    <span class="fa fa-star max"></span>
+			    </div>
                 <h5>${product.descrição}</h5>
                 <a>R$${product.custo}</a>
             </div>
@@ -107,6 +114,13 @@ function renderProducts(products) {
             <img src="${product.imagem}" alt="${product.nome}">
             <div class="card-content">
                 <h3>${product.nome}</h3>
+                <div class="star">
+				    <span class="fa fa-star max"></span>
+				    <span class="fa fa-star max"></span>
+                    <span class="fa fa-star max"></span>
+                    <span class="fa fa-star max"></span>
+				    <span class="fa fa-star max"></span>
+			    </div>
                 <h5>${product.descrição}</h5>
                 <a>R$${product.custo}</a>
             </div>

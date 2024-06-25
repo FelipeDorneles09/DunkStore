@@ -511,13 +511,26 @@ nav li{
 	height: 180%;
 }
 
+.container-destaque{
+	background-color: rgb(97, 97, 97);
+	padding: 120px 0px;
+}
+
+.title-destaque{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(255, 102, 0);
+	font-size: 80px;
+}
+
 .destaque {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
-    margin: 200px 200px;
+    margin: 0px 200px;
 }
 
 .destaque-produto {
@@ -536,24 +549,30 @@ nav li{
     font-size: 22px;
 }
 
-.star {
+.destaque-produto .star {
     margin: 5px 0 10px 10px;
 }
 
-.fa-star {
+.destaque-produto .fa-star {
     color: rgb(255, 187, 0);
 }
 
 .destaque-produto h4 {
     font-size: 22px;
-    color: rgb(64, 64, 64);
+    color: #fff;
     font-weight: 600;
 }
 
-.imagem-destaque img {
+
+.imagem-destaque-hover {
     max-width: 700px;
     max-height: 700px;
 	margin-bottom: 100px;
+	transition: all 1s ease;
+}
+
+.imagem-destaque-hover:hover{
+	scale: 1.15;
 }
 
 .destaque-variant {
@@ -645,9 +664,18 @@ nav li{
     align-items: flex-start;
 }
 
+.star{
+	margin-bottom: 10px;
+}
+
+.fa-star{
+	font-size: 12px;
+	color: rgb(255, 187, 0);
+}
+
 .card h3{
     color: rgb(255, 102, 0);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 24px;
 }
 
@@ -708,6 +736,122 @@ nav li{
     color: #888;
 }
 
+.footer{
+	margin-top: 200px;
+	position: relative;
+	width: 100%;
+	background: rgb(255, 102, 0);
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer .social-icons, .footer .menu{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	flex-wrap: wrap;
+}
+
+.footer .social-icons li,
+.footer .menu li{
+	list-style: none;
+}
+
+.footer .social-icons li a{
+	font-size: 2em;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: all .8s ease;
+}
+
+.footer .social-icons li a:hover{
+	transform: scale(1.3) ;
+}
+
+.footer .menu li a{
+	font-size: 1.2em;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	text-decoration: none;
+	opacity: 0.75;
+	font-weight: 600;
+}
+
+.footer .menu li a:hover{
+	opacity: 1;
+}
+
+.footer p{
+	color: #fff;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+
+.footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: url(wave.jpg);
+    background-size: 1000px 100px;
+}
+
+.footer .wave#wave1{
+	z-index: 1000;
+	opacity: 1;
+	bottom: 0;
+	animation: animateWave 4s linear infinite;
+}
+
+.footer .wave#wave2{
+	z-index: 999;
+	opacity: 0.5;
+	bottom: 10px;
+	animation: animateWave_02 4s linear infinite;
+}
+
+.footer .wave#wave3{
+	z-index: 1000;
+	opacity: 0.2;
+	bottom: 15px;
+	animation: animateWave 3s linear infinite;
+}
+
+.footer .wave#wave4{
+	z-index: 999;
+	opacity: 0.7;
+	bottom: 20px;
+	animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave{
+	0%{
+	background-position-x: 1000px;
+	}
+	100%{
+		background-position-x: 0px;
+	}
+}
+
+@keyframes animateWave_02{
+	0%{
+	background-position-x: 0px;
+	}
+	100%{
+		background-position-x: 1000px;
+	}
+}
 
 
 /* 5 */
@@ -715,7 +859,6 @@ nav li{
 @media screen and (max-width: 1024px) {
 	nav {
 		padding: 40px 4%; /* Reduzindo o padding para manter a altura */
-		
 	}
 	nav ul{
 		flex-wrap: wrap;
@@ -858,7 +1001,7 @@ nav li{
 	}
 
 	.card h3{
-		margin: 10px 0;
+		margin: 5px 0;
 		font-size: 14px;
 	}
 	
@@ -1057,7 +1200,7 @@ nav li{
 	}
 	
 	.card h3{
-		margin: 10px 0;
+		margin: 5px 0;
 		font-size: 14px;
 	}
 	

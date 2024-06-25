@@ -51,6 +51,13 @@
         </div>
         <div class="product-info">
             <h1 id="product-name"></h1>
+            <div class="star">
+				<span class="fa fa-star max"></span>
+				<span class="fa fa-star max"></span>
+				<span class="fa fa-star max"></span>
+				<span class="fa fa-star max"></span>
+				<span class="fa fa-star max"></span>
+			</div>
             <p class="price" id="product-price"></p>
             <div class="line"></div>
             <p id="product-description"></p>
@@ -89,14 +96,14 @@
     <script>
 		ScrollReveal({
 			reset: false,
-			distance: '60px',
+			distance: '150px',
 			duration: 2000,
 			delay: 50
 		});
-		ScrollReveal().reveal('.img-product', {delay: 25,origin: 'left'})
+		ScrollReveal().reveal('.img-product', {delay: 350,origin: 'left'})
 		ScrollReveal().reveal('.product-info', {delay: 75,origin: 'right'})
 		ScrollReveal().reveal('.titulo-produtos', {delay: 25,origin: 'top'})
-		ScrollReveal().reveal('.produtos, .search-filter', {delay: 50,origin: 'bottom'})
+		ScrollReveal().reveal('.produtos, .search-filter', {delay: 300,origin: 'bottom'})
 	</script>
 </body>
 </html>

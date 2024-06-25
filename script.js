@@ -79,12 +79,26 @@ function renderProducts(produtos) {
         const preco = document.createElement("a");
         preco.textContent = "R$" + product.custo;
 
+        const star = document.createElement("div")
+        star.classList.add("star");
+
+
+        for (let i = 0; i < 5; i++) {
+            const stars = document.createElement("span");
+            stars.className = "fa fa-star max";
+            star.appendChild(stars); // Mover esta linha para dentro do loop
+        }
+        
+
         cardContent.appendChild(h3);
+        cardContent.appendChild(star)
         cardContent.appendChild(desc);
         cardContent.appendChild(preco);
 
         card.appendChild(img);
         card.appendChild(cardContent);
+
+        
 
         card.addEventListener('click', () => {
             window.location.href = `detalhes.html?id=${product.id}`;
@@ -118,16 +132,3 @@ const mainImage = document.getElementById('main-image');
 
 carregar();
 
-let destaque = document.querySelector('.destaque')
-let layer = document.querySelectorAll('.layer')
-
-destaque.onmousemove = function(e){
-    let X = e.pageX
-    let Y = e.pageY
-
-    layer[0].style.transform = 'translate('+ X/100 +'px, '+ Y/100 +' px)'
-    layer[1].style.transform = 'translate('+ X/100 +'px, '+ Y/100 +' px)'
-    layer[2].style.transform = 'translate('+ X/100 +'px, '+ Y/100 +' px)'
-    layer[3].style.transform = 'translate('+ X/100 +'px, '+ Y/100 +' px)'
-    layer[4].style.transform = 'translate('+ X/100 +'px, '+ Y/100 +' px)'
-}

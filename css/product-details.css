@@ -425,6 +425,24 @@ nav li{
     margin-bottom: 10px;
 }
 
+.product-info .star{
+	margin-bottom: 5px;
+}
+
+.product-info .fa-star{
+	font-size: 18px;
+	color: rgb(255, 187, 0);
+}
+
+.star{
+	margin-bottom: 5px;
+}
+
+.fa-star{
+	font-size: 12px;
+	color: rgb(255, 187, 0);
+}
+
 .product-info p {
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -539,7 +557,7 @@ nav li{
 
 .card h3{
     color: rgb(255, 102, 0);
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 24px;
 }
 
@@ -712,7 +730,7 @@ nav li{
 	}
 
 	.card h3{
-		margin: 10px 0;
+		margin: 0px;
 		font-size: 14px;
 	}
 	
@@ -865,7 +883,7 @@ nav li{
 	}
 	
 	.card h3{
-		margin: 10px 0;
+		margin: 0px;
 		font-size: 14px;
 	}
 	

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 	<script src="https://unpkg.com/scrollreveal"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 	<nav id="header">
@@ -115,6 +117,8 @@
 		<img src="imgS1.jpg" alt="">
 	</div>
 
+	<div class="container-destaque">
+	<h1 class="title-destaque">Destaques</h1>
 	<div class="destaque">
 		<div class="destaque-produto">
 			<h2>Wade All City 12</h2>
@@ -130,7 +134,7 @@
 		</div>
 		<div>
 			<div class="imagem-destaque">
-				<img id="main-image" src="wow_1.png" alt="">
+				<img class="imagem-destaque-hover" id="main-image" src="wow_1.png" alt="">
 			</div>
 			<div class="destaque-variant">
 				<div class="row">
@@ -148,7 +152,7 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 	<h1 class="titulo-produtos" id="Produtos">Produtos</h1>
 
 	<div class="search-filter">
@@ -174,6 +178,30 @@
 
     <section class="produtos" id="product">  
     </section>
+
+	<footer class="footer">
+		<div class="waves">
+			<div class="wave" id="wave1"></div>
+			<div class="wave" id="wave2"></div>
+			<div class="wave" id="wave3"></div>
+			<div class="wave" id="wave4"></div>
+		</div>
+		<ul class="social-icons">
+			<li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+			<li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+			<li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+			<li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+		</ul>
+		<ul class="menu">
+			<li><a href="#">Menu</a></li>
+			<li><a href="#Sobre Nós">Sobre Nós</a></li>
+			<li><a href="#Produtos">Produtos</a></li>
+			<li><a href="contact.html">Contato</a></li>
+		</ul>
+		<p>©2024 DunkShop | Todos os Direitos Reservados</p>
+	</footer>
+
+
     <script src="script.js"></script>
 	<script src="header.js"></script>
 	<script src="carrinho.js"></script>
@@ -181,17 +209,17 @@
 	<script>
 		ScrollReveal({
 			reset: false,
-			distance: '60px',
+			distance: '150px',
 			duration: 2000,
 			delay: 50
 		});
-		ScrollReveal().reveal('.destaque-produto', {delay: 25,origin: 'right'})
-		ScrollReveal().reveal('.imagem-destaque img', {delay: 25,origin: 'left'})
-		ScrollReveal().reveal('.destaque-variant', {delay: 25,origin: 'bottom'})
-		ScrollReveal().reveal('.about', {delay: 25,origin: 'left'})
-		ScrollReveal().reveal('.container img', {delay: 75,origin: 'right'})
+		ScrollReveal().reveal('.destaque-produto', {delay: 40,origin: 'right'})
+		ScrollReveal().reveal('.imagem-destaque', {delay: 300,origin: 'left'})
+		ScrollReveal().reveal('.destaque-variant', {delay: 500,origin: 'bottom'})
+		ScrollReveal().reveal('.about', {delay: 20,origin: 'left'})
+		ScrollReveal().reveal('.container img', {delay: 300,origin: 'right'})
 		ScrollReveal().reveal('.titulo-produtos', {delay: 25,origin: 'top'})
-		ScrollReveal().reveal('.produtos, .search-filter', {delay: 50,origin: 'bottom'})
+		ScrollReveal().reveal('.produtos, .search-filter', {delay: 300,origin: 'bottom'})
 	</script>
 </body>
 </html>
