@@ -1139,6 +1139,108 @@ nav li{
 		transition: all .3s ease;
 	}
 	
+	.container-destaque{
+		padding: 50px 0px;
+	}
+	
+	.title-destaque{	
+		font-size: 50px;
+	}
+	
+	.destaque {
+		margin: 0px 50px;
+	}
+	
+	.destaque-produto {
+		padding: 25px;
+	}
+	
+	.destaque-produto h2 {
+		font-size: 40px;
+	}
+	
+	.destaque-produto b {
+		font-size: 16px;
+	}
+	
+	.destaque-produto h4 {
+		font-size: 16px;
+	}
+	
+	
+	.imagem-destaque-hover {
+		max-width: 500px;
+		max-height: 500px;
+		margin-bottom: 140px;
+	}
+	
+	.destaque-variant {
+		gap: 1.5rem;
+	}
+	
+	.row img {
+		width: 70px;
+	}
+	
+	.row {
+		height: 70px;
+		width: 70px;
+	}
+	
+	.row:hover {
+		transform: scale(1.15);
+	}
+
+	.skills-container{
+		margin: 140px 100px;
+	}
+	
+	.skills h2{
+		font-size: 16px;
+	}
+	
+	.separation{
+		margin-top: 3px;
+	}
+	
+	.separation ion-icon{
+		font-size: 16px;
+		margin: 1px;
+	}
+	
+	.skills h1{
+		font-size: 50px;
+		margin: 30px 0;
+	}
+	
+	.skills ul{
+		margin: 30px 20px;
+	}
+	
+	.skills ul li{
+		margin: 10px;
+		width: 270px;
+		height: 400px;
+		padding: 10px;
+	}
+	
+	.skills ul li:hover{
+		height: 440px;
+	}
+	
+	.skills ul li ion-icon{
+		font-size: 80px;
+	}
+	
+	.skills ul li h3{
+		margin: 10px 0;
+		font-size: 36px;
+	}
+	
+	.skills ul li h5{
+		font-size: 16px;
+		opacity: 0.5;
+	}
 }
 
 /* Estilos para celulares (largura máxima de 520px) */
@@ -1340,5 +1442,107 @@ nav li{
 		width: 70%; /* Aumente para 60% ou ajuste conforme necessário */
 		max-width: 600px; /* Ajuste conforme necessário */
 		transition: all .3s ease;
+	}
+
+	.container-destaque{
+		padding: 50px 0px;
+	}
+	
+	.title-destaque{	
+		font-size: 40px;
+	}
+	
+	.destaque {
+		margin: 0px 10px;
+	}
+	
+	.destaque-produto {
+		padding: 10px;
+	}
+	
+	.destaque-produto h2 {
+		font-size: 21px;
+		margin-top: 10px;
+	}
+	
+	.destaque-produto b {
+		font-size: 12px;
+	}
+	
+	.destaque-produto h4 {
+		font-size: 12px;
+	}
+	
+	.imagem-destaque-hover {
+		max-width: 200px;
+		max-height: 200px;
+		margin-bottom: 220px;
+	}
+	
+	.destaque-variant {
+		gap: 0.5rem;
+	}
+	
+	.row img {
+		width: 40px;
+	}
+	
+	.row {
+		height: 40px;
+		width: 40px;
+	}
+	
+	.row:hover {
+		transform: scale(1.15);
+	}
+	.skills-container{
+		margin: 120px 100px;
+	}
+	
+	.skills h2{
+		font-size: 12px;
+	}
+	
+	.separation{
+		margin-top: 3px;
+	}
+	
+	.separation ion-icon{
+		font-size: 12px;
+		margin: 1px;
+	}
+	
+	.skills h1{
+		font-size: 40px;
+		margin: 30px 0;
+	}
+	
+	.skills ul{
+		margin: 30px 0;
+	}
+	
+	.skills ul li{
+		margin: 3px;
+		width: 140px;
+		height: 260px;
+		padding: 10px;
+	}
+	
+	.skills ul li:hover{
+		height: 280px;
+	}
+	
+	.skills ul li ion-icon{
+		font-size: 60px;
+	}
+	
+	.skills ul li h3{
+		margin: 5px 0;
+		font-size: 23px;
+	}
+	
+	.skills ul li h5{
+		font-size: 12px;
+		opacity: 0.5;
 	}
 }
